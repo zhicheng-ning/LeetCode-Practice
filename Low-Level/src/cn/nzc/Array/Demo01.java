@@ -11,5 +11,18 @@
 package cn.nzc.Array;
 
 public class Demo01 {
-
+    public int removeDuplicates(int[] nums) {
+        int i=0;
+        for (int j=1;j<nums.length;j++){
+            if (nums[i] != nums[j]) {
+                nums[++i] = nums[j];
+            }
+        }
+        return i+1;
+    }
+    public static void main(String[] args) {
+        int[] nums = {-3,-1,0,0,0,3,3};
+        int res = new Demo01().removeDuplicates(nums);
+        System.out.println(res);
+    }
 }
