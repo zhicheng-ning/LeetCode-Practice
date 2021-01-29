@@ -25,9 +25,24 @@ package cn.nzc.String;
  */
 public class Demo02 {
     public static int reverse(int x) {
-
+        //注意使用long来存储翻转后的数，因为翻转后有可能超过int的范围
+        long res = 0,k=10;
+        boolean isNege = false;
+        if (x < 0) {
+            isNege = true;
+            x = -x;
+        }
+        do {
+            int t = x % 10;
+            res = res * k + t;
+            x /= 10;
+        } while (x != 0);
+        if (isNege) res = -res;
+        if (res>Integer.MAX_VALUE||res<Integer.MIN_VALUE)return 0;
+        return (int) res;
     }
     public static void main(String[] args) {
+        System.out.println(reverse(1534236469));
 
     }
 }
