@@ -36,10 +36,19 @@ package cn.nzc.String;
  */
 public class Demo07 {
     public static int strStr(String haystack, String needle) {
-        return 0;
+        if (haystack==null) return 0;
+        int len = needle.length();
+        for (int i = 0; i < haystack.length()-len+1; i++) {
+            String temp = haystack.substring(i, i + len);
+            if (temp.equals(needle)) {
+                return i;
+            }
+        }
+        return -1;
     }
     public static void main(String[] args) {
-
+        String haystack = "hello", needle = "ll";
+        System.out.println(strStr(haystack, needle));
     }
 
 }
