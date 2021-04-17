@@ -10,8 +10,9 @@
  */
 package cn.nzc;
 
-import java.util.Arrays;
-
+/**
+ * 剑指 Offer 03. 数组中重复的数字
+ */
 public class Demo03 {
     public static int findRepeatNumber(int[] nums) {
         int res = 0;
