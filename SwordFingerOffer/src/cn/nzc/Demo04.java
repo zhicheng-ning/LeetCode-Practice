@@ -15,6 +15,7 @@ package cn.nzc;
  * 从右上角开始判断，如果右上角的数字比targrt大，删去所在列；反之，删去所在行,逐步逼近左下角
  * 也可以从左下角开始判断，逐步逼近右上角
  */
+//复习
 public class Demo04 {
     public static boolean findNumberIn2DArray(int[][] matrix, int target) {
         if (matrix.length==0||matrix[0].length==0) return false;

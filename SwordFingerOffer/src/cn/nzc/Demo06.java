@@ -15,6 +15,9 @@ import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
 
+/**
+ * 剑指 Offer 06. 从尾到头打印链表
+ */
 public class Demo06 {
     public static int[] reversePrint(ListNode head) {
         List<Integer> list = new ArrayList<>();

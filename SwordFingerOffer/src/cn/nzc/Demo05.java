@@ -13,6 +13,9 @@ package cn.nzc;
 import java.util.Arrays;
 import java.util.stream.Collectors;
 
+/**
+ * 剑指 Offer 05. 替换空格
+ */
 public class Demo05 {
     public static String replaceSpace(String s) {
         //解法一
