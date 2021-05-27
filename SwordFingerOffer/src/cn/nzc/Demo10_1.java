@@ -13,7 +13,7 @@ package cn.nzc;
 /**
  * 剑指 Offer 10- I. 斐波那契数列
  */
-public class Demo10 {
+public class Demo10_1 {
     public static int fib(int n) {
         int[] arr = new int[110];
         arr[0] = 0;

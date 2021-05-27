@@ -14,6 +14,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  * 剑指 Offer 06. 从尾到头打印链表
@@ -38,7 +40,8 @@ public class Demo06 {
         head.next.next = new ListNode(2);
 
         int[] ints = reversePrint(head);
-        System.out.println(Arrays.toString(ints));
+        Logger logger = Logger.getGlobal();
+        logger.log(Level.INFO, Arrays.toString(ints));
     }
 
     public static class ListNode {
